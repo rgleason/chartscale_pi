@@ -46,7 +46,7 @@
 //----------------------------------------------------------------------------------------------------------
 
 class ChartScaleDialog;
-class chartscale_pi : public wxEvtHandler, public opencpn_plugin_117
+class chartscale_pi : public wxEvtHandler, public opencpn_plugin_118
 {
 public:
     chartscale_pi( void *ppimgr );

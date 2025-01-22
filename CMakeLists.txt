@@ -59,13 +59,13 @@ set(LONG_DESCRIPTION "Provide a slider to adjust chart scale")
 
 set(VERSION_MAJOR "0")
 set(VERSION_MINOR "3")
-set(VERSION_PATCH "13")
+set(VERSION_PATCH "14")
 set(VERSION_TWEAK "0")
 set(VERSION_DATE  "22/01/2025")#DD/MM/YYYY format
 set(OCPN_MIN_VERSION "ov58")
 
 set(OCPN_API_VERSION_MAJOR "1")
-set(OCPN_API_VERSION_MINOR "17")
+set(OCPN_API_VERSION_MINOR "18")
 set(TP_COMMENT "  * Release using CI")
 
 set(PARENT "opencpn")
@@ -203,7 +203,7 @@ if (NOT OCPN_FLATPAK_CONFIG)
     target_link_libraries(${PACKAGE_NAME} windows::headers)
   endif (WIN32)
 
-  add_subdirectory(opencpn-libs/api-17)
+  add_subdirectory(opencpn-libs/api-18)
   target_link_libraries(${PACKAGE_NAME} ocpn::api)
 
 endif (NOT OCPN_FLATPAK_CONFIG)
